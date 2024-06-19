@@ -25,7 +25,7 @@ class UVZ:
         return self._mode
 
     @mode.setter
-    def mode(self, mode: Literal["M0", "M1", "M2", "1-16", "1-8", "17-24"]):
+    def mode(self, mode: Literal["M0", "M1", "M2", "3p", "3p6p", "6p"]):
         if mode not in ["M0", "M1", "M2", "3p", "3p6p", "6p"]:
             logging.error("Mode must be one of those: M0, M1, M2, 3p, 3p6p, 6p")
             return
